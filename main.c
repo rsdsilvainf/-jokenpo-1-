@@ -4,39 +4,48 @@
    int escolha_computador, escolha_jogador;
    do{
    do{
-   printf("1 pedra, 2 papel, 3 tesoura, ou -1 para sair\n");
-   printf("escolha uma opçao:\n");
+   printf("\n\n1***Pokenpo*** Escolha:  1 Pedra, 2 Papel, 3 Tesoura, 4 Lagarto, 5 Spock--| ou 0 para encerrar\n\n");
+   //printf("escolha uma opçao:\n");
     scanf("%d",&escolha_jogador);
 
-     if(escolha_jogador == -1){
+     if(escolha_jogador == 0){
 
      printf("Final do jogo") ; 
       break;
-     }else if(escolha_jogador < 1 || escolha_jogador > 3) 
+     }else if(escolha_jogador < 1 || escolha_jogador > 5) 
      printf("você digitou uma opção inválida :\n\n");
-     } while(escolha_jogador < 1 || escolha_jogador > 3);
+     } while(escolha_jogador < 1 || escolha_jogador > 5);
 
-   if(escolha_jogador == -1){
+   if(escolha_jogador == 0){
     break;
    }
 
    if(escolha_jogador == 1)
-   printf("vc escolheu pedra:\n\n");
+   printf("vc escolheu Pedra:\n");
    if(escolha_jogador == 2)
-   printf("vc escolheu papel:\n\n");
+   printf("vc escolheu Papel:\n");
    if(escolha_jogador == 3)
-   printf("vc escolheu tesoura\n\n") ;
+   printf("vc escolheu Tesoura\n") ;
+   if(escolha_jogador == 4)
+   printf("vc escolheu Lagarto:\n");
+   if(escolha_jogador == 5)
+   printf("vc escolheu Spock\n") ;   
 
    //escolha do computador
 
     srand(time(NULL));
   escolha_computador=("%d",rand()%3+1);
    if(escolha_computador == 1){
-     printf("O computador escolheu pedra:\n\n");}
+     printf("O computador escolheu Pedra:\n\n");}
    if(escolha_computador == 2){
-     printf("O computador escolheu papel:\n\n");}
+     printf("O computador escolheu Papel:\n\n");}
    if(escolha_computador == 3){
-   printf("O computador escolheu tesoura:\n\n");}
+   printf("O computador escolheu Tesoura:\n\n");}
+    if(escolha_computador == 4){
+     printf("O computador escolheu Lagarto:\n\n");}
+   if(escolha_computador == 5){
+   printf("O computador escolheu Spock:\n\n");}
+  
 
    //resultado
    if(escolha_jogador == escolha_computador){
@@ -48,6 +57,20 @@
       printf("você ganhou:\n");
     if   (escolha_jogador ==3 && escolha_computador ==2)
      printf("você ganhou:\n");
+     if(escolha_jogador ==1 && escolha_computador == 4) 
+      printf("você ganhou;\n");
+   if  (escolha_jogador == 2 && escolha_computador ==5)
+      printf("você ganhou:\n");
+    if   (escolha_jogador ==3 && escolha_computador ==4)
+     printf("você ganhou:\n");
+    if(escolha_jogador ==5 && escolha_computador == 3) 
+      printf("você ganhou;\n");
+   if  (escolha_jogador == 5 && escolha_computador ==1)
+      printf("você ganhou:\n");
+    if   (escolha_jogador ==4 && escolha_computador ==2)
+     printf("você ganhou:\n"); 
+        if   (escolha_jogador ==4 && escolha_computador ==5)
+     printf("você ganhou:\n");     
 
    else{
    if(escolha_jogador ==3 && escolha_computador == 1)
@@ -55,7 +78,21 @@
    if  (escolha_jogador == 1 && escolha_computador ==2)
      printf("voçê perdeu:\n");
     if   (escolha_jogador == 2 && escolha_computador ==3)
-     printf("voçê perdeu:\n");}
-     } while(escolha_jogador!=-1);
+     printf("voçê perdeu:\n");
+   if(escolha_jogador ==3 && escolha_computador == 5)
+     printf("voçê perdeu:\n");
+   if  (escolha_jogador == 1 && escolha_computador ==5)
+     printf("voçê perdeu:\n");
+    if   (escolha_jogador == 5 && escolha_computador ==4)
+     printf("voçê perdeu:\n"); 
+   if(escolha_jogador ==4 && escolha_computador == 1)
+     printf("voçê perdeu:\n");
+   if  (escolha_jogador == 5 && escolha_computador ==2)
+     printf("voçê perdeu:\n");
+    if   (escolha_jogador == 4 && escolha_computador ==3)
+     printf("voçê perdeu:\n");  
+     if   (escolha_jogador == 2 && escolha_computador ==4)
+     printf("voçê perdeu:\n"); } 
+     } while(escolha_jogador!=0);
    }
 
