@@ -1,0 +1,8 @@
+    Esse é o jogo Jokenpo, também conhecido como papel, pedra e tesoura.
+    O jogo consiste em escolher uma dos três elemento 1 para pedra, 2 para papel e 3 para tesoura.
+    
+     *  Pedra ganha da tesoura (amassando-a ou quebrando-a);
+     *  Tesoura ganha do papel (cortando-o);
+     *  Papel ganha da pedra (embrulhando-a).
+     
+     
