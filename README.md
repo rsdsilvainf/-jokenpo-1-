@@ -1,0 +1,15 @@
+# -jokenpo-1-
+   Agoro foi adicionado mais 2 elementos, o 4 Lagarto e o 5 Spock.
+   
+    As regras de Pedra-papel-tesoura-lagarto-Spock são:
+
+      * 3 Tesoura corta 2 papel;
+      * 2 Papel cobre 1 pedra;
+      * 1 Pedra esmaga 4 lagarto;
+      * 4 Lagarto envenena 5 Spock;
+      * 5 Spock esmaga (ou derrete) 3 tesoura;
+      * 3 Tesoura decapita 4 lagarto;
+      * 4 Lagarto come 2 papel;
+      * 2 Papel refuta 5 Spock;
+      * 5 Spock vaporiza 1 pedra;
+      * 1 Pedra amassa 3 tesoura.
